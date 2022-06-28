@@ -67,7 +67,8 @@ nav{
     grid-area: sidebarLeft;
 }
 #content1{
-    background: transparent;
+    /* background: transparent; */
+    background: var(--color-cream);
     grid-area: content1;
     border-radius: 2rem 0 0 2rem;
     text-align: left;
@@ -75,9 +76,10 @@ nav{
     z-index: 2;
 }
 img{
+    background-image: url("./images/desktop.jpg");
+    background-size: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 0.8rem 0 0 0.8rem;
     }
 .icon{
@@ -160,32 +162,45 @@ button{
         margin: 0;
         background: var(--color-cream);
     }
+    h3{
+        color:white;
+        background: transparent;
+        font-family: "epilogue";
+        font-weight: 400;
+        letter-spacing: 0.55rem;
+        /* line-height: 1.8rem; */
+    }
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.25fr 0.85fr ;
+        grid-template-rows: 0.452fr 0.4452fr ;
         grid-template-areas: 
         "content1"
         "content2";
-        margin: 0.625rem;
+        margin-top: 1.2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     } 
     #content1{
-        border-radius: 0.313rem 0.313rem 0 0;
-        padding: var(--mobile-padding);
+        padding-top: var(--mobile-padding);
+        padding-bottom: 0;
+        padding-left: var(--mobile-padding);
+        padding-right: var(--mobile-padding);
+        z-index: 1;
     }
     img{
+        background-image: url("./images/mobile.jpg");
+        background-size: cover;
         width: 100%;
-        height: 50%;
-        object-fit: cover;
-        border-radius: 0.25rem 0.25rem 0 0;
-        }
-        .icon{
-            width: 1rem;
-            height: 1rem;
-            padding-right: 1rem;
-            }
+        height: 80%;
+        border-radius: 0.75rem 0.75rem 0 0;
+        }    
     #content2{
-        border-radius: 0 0 0.25rem 0.25rem;
-        padding: var(--mobile-padding); 
+        border-radius: 0 0 0.75rem 0.75rem;
+        padding: 0.75rem; 
+        margin-top: -3.8rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        z-index: 3;
     }
     .content2-main{
         display: flex;
@@ -193,26 +208,50 @@ button{
         background: transparent;
     }
     .perfume{
+        /* padding-top: var(--mobile-padding); */
         color: var(--color-darkgrayishblue);
         text-transform: uppercase;
         font-weight: 100;
+        padding-top: 0.45rem;
+        padding-bottom: 0.75rem;
     }
     .monthly{
-        font-size: 18px;
+        font-size: 1.8rem;
         font-weight: 700;
-    }
-    .per{
-        font-size: 1.125rem;
-        font-weight: 100;
-        line-height: 1.6; 
-        padding-left: 0.625rem;
+        letter-spacing: 0.125rem;
+        padding-bottom: 0.75rem;
     }
     .full{
-        font-size: 1.125rem;
+        /* font-size: 1.125rem; */
+        padding: 0;
+    }
+    .price{
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        padding-top: 0.0625rem;
+        padding-bottom: 0.0625rem;
+    }
+    .amount{
+        color:var(--color-darkcyan);
+        background: transparent;
+        display: inline;
+        font-size: 36px;
+    }
+    .per{
+        font-size: 0.938rem;
+        font-weight: 100;
+        padding-left: 1.25rem;
+        padding-top: 0.5rem;
     }
     nav, footer,  #sidebarLeft, #sidebarRight{
         display: var(--mobile-display);
        }
+    .icon{
+    width: 1rem;
+    height: 1rem;
+    padding-right: 1rem;
+    }
     button{
         border: none;
         border-radius: var(--main-radius);
@@ -221,7 +260,7 @@ button{
         font-size: 1rem;
         font-weight: 700;
         color: var(--color-white);
-        margin: 1.188rem 0 0 0.25rem;
+        margin-bottom: 0.85rem;
         width: 100%;
     }
 }

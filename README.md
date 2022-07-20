@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://duokobia.github.io/xxxx/)
+- Live Site URL: [Add live site URL here](https://duokobia.github.io/product-preview-card-component/)
 
 
 ## My process

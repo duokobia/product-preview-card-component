@@ -4,29 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;400;500;600;700;800;900&family=Karla:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Product Preview Card Component</title>
+
+     <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="./css/query.css">
+     <link rel="stylesheet" href="./css/reset.css">
+     <link rel="stylesheet" href="./css/styles.css">
+
+
+
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+    <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>
-    <div class="container">
-        <nav></nav>
-        <div id="sidebarLeft"></div>
-        <div id="content1">
-        <img class="img"/>
-        </div>
-        <div id="content2">
-            <h3 class="perfume">prefume</h3>
-            <div class="content2-main">
-                <h3 class="monthly">Gabrielle Essence Eau De Parfum</h3>
-                <p class="full">A floral, solar and voluptuous interpretation composed by Olivier Poige, Perfumer-Creator for the House of CHANEL.</p>
-                <div class="price"><h1 class="amount">$149.99</h1><p class="per">$169.99</p></div>
+    <main class="container">
+        <section class="product-preview-grid">
+                <div id="product-image">
+                    <picture>
+                        <source media="(min-width: 376px)" 
+                                srcset="./images/desktop.jpg"
+                                class="img">
+                        <img
+                                src="./images/mobile.jpg"
+                                alt="product image"
+                                class="image_product"
+                                style="width:auto;"
+                                alt="mobile"
+                              />
+                    </picture>
+                <img class="img"/>
+    
+                </div>
+                <div id="product-article">
+                    <h3 class="perfume">prefume</h3>
+                    <div class="content2-main">
+                        <h3 class="monthly">Gabrielle Essence Eau De Parfum</h3>
+                        <p class="full">A floral, solar and voluptuous interpretation composed by Olivier Poige, Perfumer-Creator for the House of CHANEL.</p>
+                        <div class="price"><h1 class="amount">$149.99</h1><del class="per">$169.99</del></div>
+                    </div>
+                    <button class="button"><span><img class="icon" src="./images/icon-cart.svg" alt="icon"></span><span class="add">Add to Cart</span></button>
+                </div>
+    
+                </div>
+              
             </div>
-            <button><img class="icon" src="./images/icon-cart.svg" alt="icon">Add to Cart</button>
-        </div>
-        <div id="sidebarRight"></div>
-        <footer></footer>
-    </div>
+        </section>
+    </main>
 </body>
 </html>

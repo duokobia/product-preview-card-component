@@ -1,0 +1,2 @@
+####################  git ignore these files to prevent littering the git repository with less important files
+.DS_Store

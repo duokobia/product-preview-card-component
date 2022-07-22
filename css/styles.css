@@ -180,7 +180,7 @@ button:hover{
     .product-preview-grid{
         margin: auto;
         max-width: 52rem;
-        height: 52vh;
+        max-height: 53vh;
         grid-template-columns: repeat(2, 0.8fr);
         grid-template-areas: 
         ' image article';
@@ -190,9 +190,6 @@ button:hover{
         img{
             border-radius: 0;
         }
-    #product-article{
-        padding: 0.25rem 2rem 4rem 2.85rem;
-    }
     .article-content-main{
         display: flex;
         flex-direction: column;
@@ -205,10 +202,10 @@ button:hover{
     }
     .monthly{
         font-size: var(--fs-12);
-        padding-bottom: 2rem;
+        padding-bottom: 1.5rem;
     }
     .full{
-         padding-bottom: 2rem;
+         padding-bottom: 1.5rem;
     }
     .current-price{
         font-size: var(--fs-12);

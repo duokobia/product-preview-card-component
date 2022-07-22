@@ -14,9 +14,14 @@ body {
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
     font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+  
+    
 }
 
 li {

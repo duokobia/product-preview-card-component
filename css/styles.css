@@ -66,14 +66,14 @@
     align-items: center;
     justify-content: center;
     background-color: var(--color-cream);
-    height: 100vh;
+    height: 110vh;
 }
 .product-preview-grid{
     position: absolute;
     width: 92%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.75fr 1.5fr;
+    grid-template-rows: 0.75fr 1.4fr;
     grid-template-areas: 
     ' image'
     'article';
@@ -96,15 +96,14 @@ img{
     align-items: left;
     justify-content: space-between;
 }
-.content2-main{
+.article-content-main{
     background: transparent;
-    margin-top: -6rem;
 }
 .perfume{
     color: var(--color-darkgrayishblue);
     text-transform: uppercase;
     padding-top: 1.25rem;
-    font-size: var(--fs-05);
+    font-size: var(--fs-08);
     font-weight: var(--fw-400);
     letter-spacing: 0.5rem;
     font-family: var(--ff-SourceSansPro);
@@ -114,7 +113,7 @@ img{
     font-size: var(--fs-15);
     line-height: 1.0;
     letter-spacing: 0.125rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 .full{
     color:var(--color-darkgrayishblue);
@@ -122,12 +121,11 @@ img{
     font-weight: var(--fw-400);
     line-height: 1.3; 
     letter-spacing: 0.095rem;
+    padding-bottom: 3rem;
 }
 .price{
     background: transparent;
     display: inline-block;
-    margin-top: 2.75rem;
-    margin-bottom: -4.5rem;
 }
 .current-price{
     color:var(--color-darkcyan);
@@ -155,7 +153,6 @@ button{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: -4.5rem;
     opacity: 0.95;
 }
 button:hover{
@@ -177,40 +174,41 @@ button:hover{
 
 @media only screen and (min-width:376px){
     .container{
-        position: relative;
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--color-cream);
         height: 100vh;
        }
     .product-preview-grid{
-        position: absolute;
         margin: auto;
-        max-width: 520px;
-        width: 90%;
-        height: 49vh;
+        max-width: 52rem;
+        height: 52vh;
         grid-template-columns: repeat(2, 0.8fr);
         grid-template-areas: 
         ' image article';
         overflow-x: hidden;
         overflow-y: hidden;
-        border-radius: var( --radius-3);
         }
         img{
             border-radius: 0;
         }
-    .content2-main{
-        background: transparent;
-        margin-top: -4.25rem;
-        margin-bottom: -1.5rem;
+    #product-article{
+        padding: 0.5rem 2rem 3.75rem 2.85rem;
+    }
+    .article-content-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .perfume{
+        font-size: var(--fs-03);
+        letter-spacing: 0.35rem;
+    
     }
     .monthly{
         font-size: var(--fs-12);
+        padding-bottom: 2.5rem;
     }
     .full{
-        color:var(--color-darkgrayishblue);
+         padding-bottom: 2.5rem;
     }
     .current-price{
         font-size: var(--fs-12);
@@ -219,19 +217,15 @@ button:hover{
         font-size: var(--fs-01);
     }
     button{
-        margin:  -1rem 0 0.25rem 0;
         width: 96%;
     }
     .add{
-        color: var(--color-white);
         font-size: var(--fs-6);
-        font-weight: var(--fw-700); 
     }
     .icon{
         width: 2.4rem;
         height: 1.5rem;
         padding-right: 0.75rem;
         font-size: var(--fs-6);
-        font-weight: 700;
         }
 }

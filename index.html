@@ -23,9 +23,8 @@
     <title>Frontend Mentor | Product Preview Card Component</title>
 </head>
 <body>
-    <div>
         <main class="container">
-            <section class="product-preview-grid">
+            <div class="product-preview-grid">
                     <div id="product-image">
                          <!-- Picture element is used for media query and image fallback  -->
                         <picture>
@@ -37,25 +36,19 @@
                                     alt="product image"
                                     class="product-image"
                                     style="width:auto;"
-                                    alt="mobile"
                                   />
                         </picture>
                     </div>
-                    <div id="product-article">
-                        <h3 class="perfume">prefume</h3>
-                        <div class="content2-main">
-                            <h1 class="monthly">Gabrielle Essence Eau De Parfum</h1>
+                    <section id="product-article">
+                        <h1 class="perfume">prefume</h1>
+                        <article class="article-content-main">
+                            <h2 class="monthly">Gabrielle Essence Eau De Parfum</h2>
                             <p class="full">A floral, solar and voluptuous interpretation composed by Olivier Poige, Perfumer-Creator for the House of CHANEL.</p>
-                            <div class="price"><span class="current-price">$149.99</span><del class="old-price">$169.99</del></div>
-                        </div>
+                            <span class="price"><span class="current-price">$149.99</span><del class="old-price">$169.99</del></span>
+                        </article>
                         <button class="button"><span><img class="icon" src="./images/icon-cart.svg" alt="icon"></span><span class="add">Add to Cart</span></button>
-                    </div>
-        
-                    </div>
-                  
+                    </section>
                 </div>
-            </section>
         </main>
-    </div>
 </body>
 </html>

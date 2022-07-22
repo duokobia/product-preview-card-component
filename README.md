@@ -56,7 +56,8 @@ I wrote a code for the design initially but wanted a cleaner code so I had to re
 
 ### What I learned
 
-- More efficient usage of CSS Grid. 
+- More efficient usage of CSS Grid.
+- Semantics html5 markup for SEO. 
 - Increasing performance gain and controlling design output learnt from:
   https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/
 - I am opened to comments about how to improve my frontend skills. 
@@ -77,6 +78,7 @@ I wrote a code for the design initially but wanted a cleaner code so I had to re
 - google
 - stackoverflow
 - youtube videos
+- w3schools.com
 
 ## Author
 

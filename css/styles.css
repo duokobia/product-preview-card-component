@@ -191,7 +191,7 @@ button:hover{
             border-radius: 0;
         }
     #product-article{
-        padding: 0.5rem 2rem 3.75rem 2.85rem;
+        padding: 0.25rem 2rem 4rem 2.85rem;
     }
     .article-content-main{
         display: flex;
@@ -205,10 +205,10 @@ button:hover{
     }
     .monthly{
         font-size: var(--fs-12);
-        padding-bottom: 2.5rem;
+        padding-bottom: 2rem;
     }
     .full{
-         padding-bottom: 2.5rem;
+         padding-bottom: 2rem;
     }
     .current-price{
         font-size: var(--fs-12);
